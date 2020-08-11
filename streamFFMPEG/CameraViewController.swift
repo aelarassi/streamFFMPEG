@@ -857,6 +857,11 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
     @IBOutlet private weak var resumeButton: UIButton!
 
     @IBAction private func toggleMovieRecording(_ recordButton: UIButton) {
+        
+        let facebookRTMP: String = "rtmps://live-api-s.facebook.com:443/rtmp/691942768320388?s_bl=1&s_ps=1&s_sw=0&s_vt=api-s&a=AbyOURVTBTzGPSYG"
+        let youtubeRTMP: String = "rtmp://a.rtmp.youtube.com/live2/26w2-k4yq-t3h6-dbpz-0d8j"
+        let urlPathVideo = Bundle.main.path(forResource: "bulletTrain", ofType: "mp4")!
+
         guard let movieFileOutput = self.movieFileOutput else {
             return
         }
@@ -891,10 +896,19 @@ class CameraViewController: UIViewController, AVCaptureFileOutputRecordingDelega
 
                 // Start recording video to a temporary file.
                 let outputFileName = NSUUID().uuidString
-                let outputFilePath = (NSTemporaryDirectory() as NSString).appendingPathComponent((outputFileName as NSString).appendingPathExtension("mov")!)
+                let outputFilePath = (NSTemporaryDirectory() as NSString).appendingPathComponent((outputFileName as NSString).appendingPathExtension("mp4")!)
                 movieFileOutput.startRecording(to: URL(fileURLWithPath: outputFilePath), recordingDelegate: self)
+
                 print("--- outputFilePath : \(outputFilePath)")
-                //MobileFFmpeg.execute("-i video.mkv -codec copy video.mp4")
+
+                MobileFFmpeg.execute("-i \(outputFilePath) -map 0 -c:v libx264 -c:a aac -b:v 1000k -maxrate 1000k -bufsize 2000k -g 50 -f tee [f=flv]\(youtubeRTMP)|[f=flv:onfail=ignore]\(facebookRTMP)")
+                
+                //MobileFFmpeg.execute("-re -i \(urlPathVideo) -f flv \(youtubeRTMP)")
+                
+                //MobileFFmpeg.execute("-i \(urlPathVideo) -vcodec libx264 -maxrate 2000k -bufsize 2000k -acodec libmp3lame -ar 44100 -b:a 128k -f flv \(youtubeRTMP)")
+                
+                
+                
             } else {
                 movieFileOutput.stopRecording()
             }

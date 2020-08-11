@@ -1,0 +1,6 @@
+framework module Pods_streamFFMPEG {
+  umbrella header "Pods-streamFFMPEG-umbrella.h"
+
+  export *
+  module * { export * }
+}

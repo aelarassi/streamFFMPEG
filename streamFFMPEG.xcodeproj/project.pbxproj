@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FF2CDF375E5DCEF897CAC34 /* Pods_streamFFMPEG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9366E1F4DD47C09A2EEEC26B /* Pods_streamFFMPEG.framework */; };
 		431F4F4B24DC428300B1DFD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431F4F4A24DC428300B1DFD0 /* AppDelegate.swift */; };
 		431F4F4D24DC428300B1DFD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431F4F4C24DC428300B1DFD0 /* SceneDelegate.swift */; };
 		431F4F4F24DC428300B1DFD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431F4F4E24DC428300B1DFD0 /* ViewController.swift */; };
@@ -17,9 +18,11 @@
 		431F4F6324DC435700B1DFD0 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431F4F5F24DC435700B1DFD0 /* PreviewView.swift */; };
 		431F4F6424DC435700B1DFD0 /* ItemSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431F4F6024DC435700B1DFD0 /* ItemSelectionViewController.swift */; };
 		431F4F6524DC435700B1DFD0 /* PhotoCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431F4F6124DC435700B1DFD0 /* PhotoCaptureDelegate.swift */; };
+		431F4F7124DDAA3300B1DFD0 /* bulletTrain.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 431F4F7024DDAA3300B1DFD0 /* bulletTrain.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09E1F99C57C65E93DFBE4182 /* Pods-streamFFMPEG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-streamFFMPEG.release.xcconfig"; path = "Target Support Files/Pods-streamFFMPEG/Pods-streamFFMPEG.release.xcconfig"; sourceTree = "<group>"; };
 		431F4F4724DC428300B1DFD0 /* streamFFMPEG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = streamFFMPEG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		431F4F4A24DC428300B1DFD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		431F4F4C24DC428300B1DFD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +35,10 @@
 		431F4F5F24DC435700B1DFD0 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		431F4F6024DC435700B1DFD0 /* ItemSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemSelectionViewController.swift; sourceTree = "<group>"; };
 		431F4F6124DC435700B1DFD0 /* PhotoCaptureDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureDelegate.swift; sourceTree = "<group>"; };
+		431F4F6724DC47E500B1DFD0 /* streamFFMPEG-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "streamFFMPEG-Bridging-Header.h"; sourceTree = "<group>"; };
+		431F4F7024DDAA3300B1DFD0 /* bulletTrain.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = bulletTrain.mp4; path = video/bulletTrain.mp4; sourceTree = "<group>"; };
+		76EC7B77DF98B7D276DA22E8 /* Pods-streamFFMPEG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-streamFFMPEG.debug.xcconfig"; path = "Target Support Files/Pods-streamFFMPEG/Pods-streamFFMPEG.debug.xcconfig"; sourceTree = "<group>"; };
+		9366E1F4DD47C09A2EEEC26B /* Pods_streamFFMPEG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_streamFFMPEG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FF2CDF375E5DCEF897CAC34 /* Pods_streamFFMPEG.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +58,8 @@
 			children = (
 				431F4F4924DC428300B1DFD0 /* streamFFMPEG */,
 				431F4F4824DC428300B1DFD0 /* Products */,
+				E19A262D4609054154BA9284 /* Pods */,
+				B5A86CF00BDFFEE44DCA4628 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +74,7 @@
 		431F4F4924DC428300B1DFD0 /* streamFFMPEG */ = {
 			isa = PBXGroup;
 			children = (
+				431F4F7024DDAA3300B1DFD0 /* bulletTrain.mp4 */,
 				431F4F5E24DC435700B1DFD0 /* CameraViewController.swift */,
 				431F4F6024DC435700B1DFD0 /* ItemSelectionViewController.swift */,
 				431F4F6124DC435700B1DFD0 /* PhotoCaptureDelegate.swift */,
@@ -75,8 +86,26 @@
 				431F4F5324DC428500B1DFD0 /* Assets.xcassets */,
 				431F4F5524DC428500B1DFD0 /* LaunchScreen.storyboard */,
 				431F4F5824DC428500B1DFD0 /* Info.plist */,
+				431F4F6724DC47E500B1DFD0 /* streamFFMPEG-Bridging-Header.h */,
 			);
 			path = streamFFMPEG;
+			sourceTree = "<group>";
+		};
+		B5A86CF00BDFFEE44DCA4628 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9366E1F4DD47C09A2EEEC26B /* Pods_streamFFMPEG.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E19A262D4609054154BA9284 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76EC7B77DF98B7D276DA22E8 /* Pods-streamFFMPEG.debug.xcconfig */,
+				09E1F99C57C65E93DFBE4182 /* Pods-streamFFMPEG.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +115,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 431F4F5B24DC428500B1DFD0 /* Build configuration list for PBXNativeTarget "streamFFMPEG" */;
 			buildPhases = (
+				0E38F809A7894F5B08C9DCD1 /* [CP] Check Pods Manifest.lock */,
 				431F4F4324DC428300B1DFD0 /* Sources */,
 				431F4F4424DC428300B1DFD0 /* Frameworks */,
 				431F4F4524DC428300B1DFD0 /* Resources */,
@@ -137,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				431F4F7124DDAA3300B1DFD0 /* bulletTrain.mp4 in Resources */,
 				431F4F5724DC428500B1DFD0 /* LaunchScreen.storyboard in Resources */,
 				431F4F5424DC428500B1DFD0 /* Assets.xcassets in Resources */,
 				431F4F5224DC428300B1DFD0 /* Main.storyboard in Resources */,
@@ -144,6 +175,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E38F809A7894F5B08C9DCD1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-streamFFMPEG-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		431F4F4324DC428300B1DFD0 /* Sources */ = {
@@ -298,17 +354,20 @@
 		};
 		431F4F5C24DC428500B1DFD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76EC7B77DF98B7D276DA22E8 /* Pods-streamFFMPEG.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 992ZKDJZCH;
 				INFOPLIST_FILE = streamFFMPEG/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aelarassi.demopushnotifs.streamFFMPEG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "streamFFMPEG/streamFFMPEG-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -316,17 +375,20 @@
 		};
 		431F4F5D24DC428500B1DFD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09E1F99C57C65E93DFBE4182 /* Pods-streamFFMPEG.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 992ZKDJZCH;
 				INFOPLIST_FILE = streamFFMPEG/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aelarassi.demopushnotifs.streamFFMPEG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "streamFFMPEG/streamFFMPEG-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
